@@ -1,0 +1,27 @@
+{
+   "type": "mssql",
+   "host": "localhost",
+   "username": "orm_test_acc",
+   "password": "Admin12345",
+   "database": "tempdb",
+   "synchronize": true,
+   "logging": true,
+   "options": {
+      "encrypt": false,
+      "instanceName": ""
+   },
+   "entities": [
+      "src/entity/**/*.ts"
+   ],
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
